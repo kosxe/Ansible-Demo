@@ -1,5 +1,5 @@
 ---
-- hosts: SMA Servers
+- hosts: Dev
 
   tasks: 
 
