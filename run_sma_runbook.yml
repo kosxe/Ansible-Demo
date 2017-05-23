@@ -1,0 +1,11 @@
+---
+- hosts: Dev
+
+  tasks:
+    - name: Initiate an SMA runbook
+      win_shell: Start-SmaRunbook
+      args:
+        WebServiceEndpoint: https://localhost
+        Name: new-demoitem
+
+...
