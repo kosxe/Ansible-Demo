@@ -1,0 +1,15 @@
+---
+- hosts: Dev
+
+  tasks:
+    - name: Create a folder in C:\Temp\ if does not exist
+      win_file:
+        path: C:\Temp\Test_tower_2
+        state: directory
+        
+    - name: Run a powershell command to new-file
+      win_shell: |
+        New-Item -ItemType File -Path C:\Temp\Test_tower_2 -Name test.ps1 
+
+
+...
