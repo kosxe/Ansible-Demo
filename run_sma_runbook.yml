@@ -3,7 +3,6 @@
 
   tasks:
     - name: Initiate an SMA runbook
-      win_shell: |
-         Start-SmaRunbook -WebServiceEndpoint 'HTTPS://localhost' -Name new-demoitem
+      win_shell: c:\temp\ansible_test.ps1
 
 ...
